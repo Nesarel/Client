@@ -1,4 +1,4 @@
-const api = "http://localhost:3000/1"
+const api = "http://localhost:3000"
 
 let bdd = []
 
