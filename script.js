@@ -1,4 +1,5 @@
-const api = "https://curious-fox-flannel-nightgown.cyclic.app"
+// const api = "https://curious-fox-flannel-nightgown.cyclic.app"
+const api = "http://localhost:3000/1"
 
 let BDD = []
 
@@ -17,6 +18,6 @@ fetch(api)
 .then(res => res.json())
 .then(code => document.body.innerHTML = code[0].code)
 
-document.body.innerHTML = code[0].code
+// document.body.innerHTML = code[0].code
 
 // getAPI(api)
