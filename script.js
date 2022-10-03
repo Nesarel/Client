@@ -6,6 +6,9 @@ async function getAPI(url) {
     const res = await fetch(url);
     const data = await res.json();
     BDD = data;
+    console.log(res);
+    console.log(data);
+    console.log(BDD);
     return BDD;
 }
 
@@ -16,4 +19,4 @@ async function getAPI(url) {
 
 // document.body.innerHTML = code[0].code
 
-console.log(getAPI(api));
+getAPI(api)
