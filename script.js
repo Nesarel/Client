@@ -1,9 +1,12 @@
 const api = "https://curious-fox-flannel-nightgown.cyclic.app"
 
+let BDD = []
+
 async function getAPI(url) {
     const res = await fetch(url);
-    const data = await res.json()
-    return data;
+    const data = await res.json();
+    BDD = data;
+    return BDD;
 }
 
 
